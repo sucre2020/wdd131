@@ -1,0 +1,258 @@
+:root {
+  --header-blue: #1e516f;
+  --nav-dark: #3d3d3d;
+  --page-bg: #e6e6e6;
+  --card-bg: #f5f5f5;
+  --text: #1d1d1d;
+  --muted: #4d4d4d;
+  --light-blue: #c9dbe7;
+  --line: #cfcfcf;
+  --link: #1d2435;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 16px;
+  background: var(--header-blue);
+  border: 1px solid #505f6a;
+}
+
+.course-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 10px;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f4f8fb;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(62, 62, 62, 0.92);
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.top-nav a {
+  flex: 1 1 25%;
+  color: #f3f3f3;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px 12px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+main {
+  padding: 18px 18px 0;
+}
+
+h1 {
+  margin: 18px 0 22px;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+  margin: 0;
+  padding: 14px 18px;
+  background: var(--header-blue);
+  color: #f7fbff;
+  font-size: 1.05rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 22px;
+  padding: 18px 18px 16px;
+}
+
+.bio-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-copy p {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.bio-copy h3 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  color: #202020;
+}
+
+.nigeria-copy {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0 4px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.flag-mini {
+  width: 62px;
+  height: 34px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.stripe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.green {
+  background: #008751;
+}
+
+.white {
+  background: #f5f5f5;
+}
+
+.nigerian-flag .green:first-child {
+  background: #008751;
+}
+
+.nigerian-flag .white {
+  background: #ffffff;
+}
+
+.nigerian-flag .stripe:last-child {
+  background: #008751;
+}
+
+.nigeria-copy p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-layout img {
+  width: 100%;
+  max-width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resources-card ul {
+  margin: 0;
+  padding: 18px 26px 22px 40px;
+  list-style: disc;
+  line-height: 2;
+  font-size: 1.06rem;
+  color: var(--text);
+}
+
+footer {
+  background: var(--header-blue);
+  color: #f5f9ff;
+  text-align: center;
+  padding: 18px 16px 12px;
+  margin-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+#currentyear,
+#lastModified {
+  font-weight: 700;
+}
+
+.flag-inline {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+@media (max-width: 760px) {
+  .card-grid,
+  .about-layout,
+  .nigeria-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .top-nav {
+    flex-wrap: wrap;
+  }
+
+  .top-nav a {
+    flex-basis: 50%;
+  }
+
+  .about-layout img {
+    max-width: 100%;
+  }
+}
