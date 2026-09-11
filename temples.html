@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta
+      name="description"
+      content="Temple Album page with responsive gallery and mobile navigation.">
+    <meta name="author" content="Efita E. Effiom">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+    <link rel="icon" href="/week1/images/efi.webp">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-title">
+        <h2>Temple Album</h2>
+      </div>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Temple Gallery</h1>
+
+      <div class="gallery">
+        <figure>
+          <img src="images/Accra-Ghana-Temple.webp" alt="Accra Ghana Temple" />
+          <figcaption>Accra Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Aba_nigeria_temple.jpg" alt="Aba Nigeria Temple" />
+          <figcaption>Aba Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/abidjan-ivory-coast-temple.jpg" alt="Abidjan Ivory Coast Temple" />
+          <figcaption>Abidjan Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/drcongo_Kinshasa_temple.jpg" alt="Kinshasa Democratic Republic of the Congo Temple" />
+          <figcaption>Kinshasa Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/durban_south_africa_temple.jpg" alt="Durban South Africa Temple" />
+          <figcaption>Durban Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/harare_zimbabwe_temple.webp" alt="Harare Zimbabwe Temple" />
+          <figcaption>Harare Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/helsinki-temple-finland.webp" alt="Helsinki Finland Temple" />
+          <figcaption>Helsinki Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/nairobi-kenya-temple.jpg" alt="Nairobi Kenya Temple" />
+          <figcaption>Nairobi Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/stockholm_sweden.webp" alt="Stockholm Sweden Temple" />
+          <figcaption>Stockholm Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Efita E. Effiom
+      </p>
+      <p id="lastModified">Last modified: </p>
+    </footer>
+  </body>
+</html>
