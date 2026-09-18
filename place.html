@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross River State, Nigeria</title>
+    <meta
+      name="description"
+      content="A responsive travel information page for Cross River State, Nigeria, with data and weather details."
+    />
+    <meta name="author" content="Efita E. Effiom" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <h1>Cross River</h1>
+      </header>
+
+      <main class="place-content">
+        <div class="hero-shell">
+          <picture>
+            <source
+              srcset="images/d_cross_river.webp"
+              media="(max-width: 600px)"
+            />
+            <source
+              srcset="images/hand_cross_river.webp"
+              media="(min-width: 601px)"
+            />
+            <img
+              class="hero-image"
+              src="images/hand_cross_river.webp1"
+              alt="Scenic landscape in Cross River State, Nigeria"
+              width="1200"
+              height="700"
+            />
+          </picture>
+
+          <aside class="data-card" aria-label="Place data">
+            <h2>Data</h2>
+            <dl>
+              <div><dt>Area:</dt><dd>20,156 km²</dd></div>
+              <div><dt>Population:</dt><dd>5,018,856</dd></div>
+              <div><dt>Capital:</dt><dd>Calabar</dd></div>
+              <div><dt>Languages:</dt><dd>English, Efik, Ejagham</dd></div>
+              <div><dt>Currency:</dt><dd>Nigerian Naira</dd></div>
+              <div><dt>Time Zone:</dt><dd>UTC+1</dd></div>
+              <div><dt>Calling Code:</dt><dd>+234</dd></div>
+              <div><dt>Internet TLD:</dt><dd>.ng</dd></div>
+            </dl>
+          </aside>
+
+          <aside class="weather-card" aria-label="Weather information">
+            <h2>Weather</h2>
+            <div class="weather-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img">
+                <circle cx="22" cy="22" r="10" fill="#f7d56b" />
+                <g stroke="#f7d56b" stroke-linecap="round" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="22" y2="8" />
+                  <line x1="22" y1="36" x2="22" y2="42" />
+                  <line x1="2" y1="22" x2="8" y2="22" />
+                  <line x1="36" y1="22" x2="42" y2="22" />
+                  <line x1="7" y1="7" x2="11" y2="11" />
+                  <line x1="33" y1="33" x2="37" y2="37" />
+                  <line x1="7" y1="37" x2="11" y2="33" />
+                  <line x1="33" y1="11" x2="37" y2="7" />
+                </g>
+                <path d="M14 42h28c5 0 9-4 9-9s-4-9-9-9c-1-7-7-12-15-12s-14 7-15 14c-6 0-11 5-11 11s5 11 11 11z" fill="#dce3ea" opacity="0.9"/>
+              </svg>
+            </div>
+            <dl>
+              <div><dt>Temperature:</dt><dd>28°C</dd></div>
+              <div><dt>Conditions:</dt><dd>Humid and Cloudy</dd></div>
+              <div><dt>Wind:</dt><dd>8 km/h</dd></div>
+              <div><dt>Wind Chill:</dt><dd id="windChillValue">N/A</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          &copy; <span id="currentyear"></span> Efita Effiom
+        </p>
+        <p id="lastModified">Last modified: </p>
+      </footer>
+    </div>
+  </body>
+</html>
