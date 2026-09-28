@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta
+      name="description"
+      content="Confirmation page for a submitted product review."
+    >
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>Review Confirmation</h1>
+      </div>
+    </header>
+
+    <main class="page-shell confirmation-shell">
+      <section class="confirmation-panel" aria-labelledby="confirmation-title">
+        <h2 id="confirmation-title">Thank you for your review</h2>
+        <p class="success-message">Your product review has been submitted successfully.</p>
+
+        <dl class="review-summary">
+          <div>
+            <dt>Product</dt>
+            <dd id="summary-product">-</dd>
+          </div>
+          <div>
+            <dt>Rating</dt>
+            <dd id="summary-rating">-</dd>
+          </div>
+          <div>
+            <dt>Installed</dt>
+            <dd id="summary-date">-</dd>
+          </div>
+          <div>
+            <dt>Useful Features</dt>
+            <dd id="summary-features">-</dd>
+          </div>
+          <div>
+            <dt>Reviewer</dt>
+            <dd id="summary-name">-</dd>
+          </div>
+          <div>
+            <dt>Review</dt>
+            <dd id="summary-review">-</dd>
+          </div>
+        </dl>
+
+        <div class="counter-box" aria-live="polite">
+          <p>Total reviews completed:</p>
+          <strong id="review-count">0</strong>
+        </div>
+
+        <div class="confirmation-actions">
+          <a href="form.html" class="secondary-button">Submit another review</a>
+          <a href="index.html" class="secondary-button">Back to home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Efita E. Effiom
+        <span class="flag-inline">🇳🇬</span> Nigeria
+      </p>
+      <p id="lastModified">Last modified: </p>
+    </footer>
+  </body>
+</html>

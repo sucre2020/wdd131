@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta
+      name="description"
+      content="Product review form for WDD 131 with responsive layout and review confirmation."
+    >
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>Product Review</h1>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="form-panel" aria-labelledby="form-title">
+        <h2 id="form-title">Share Your Experience</h2>
+
+        <form method="get" action="review.html" aria-label="Product review form">
+          <div class="field-group">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+              <option value="" disabled selected>Select a Product ...</option>
+            </select>
+          </div>
+
+          <fieldset class="field-group rating-fieldset">
+            <legend>Overall Rating</legend>
+            <div class="rating-group" role="radiogroup" aria-label="Overall product rating">
+              <div class="rating-option">
+                <input id="rating-1" type="radio" name="rating" value="1" required>
+                <label for="rating-1" aria-label="1 star">☆</label>
+              </div>
+              <div class="rating-option">
+                <input id="rating-2" type="radio" name="rating" value="2">
+                <label for="rating-2" aria-label="2 stars">☆</label>
+              </div>
+              <div class="rating-option">
+                <input id="rating-3" type="radio" name="rating" value="3">
+                <label for="rating-3" aria-label="3 stars">☆</label>
+              </div>
+              <div class="rating-option">
+                <input id="rating-4" type="radio" name="rating" value="4">
+                <label for="rating-4" aria-label="4 stars">☆</label>
+              </div>
+              <div class="rating-option">
+                <input id="rating-5" type="radio" name="rating" value="5">
+                <label for="rating-5" aria-label="5 stars">☆</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="field-group">
+            <label for="install-date">Date of Installation</label>
+            <input id="install-date" name="installDate" type="date" required>
+          </div>
+
+          <fieldset class="field-group features-fieldset">
+            <legend>Useful Features</legend>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="Easy setup">
+                <span>Easy setup</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="Reliable performance">
+                <span>Reliable performance</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="Strong support">
+                <span>Strong support</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="Energy efficiency">
+                <span>Energy efficiency</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="User friendly design">
+                <span>User friendly design</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="features" value="Fast processing">
+                <span>Fast processing</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field-group">
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5" placeholder="Tell us about your experience..."></textarea>
+          </div>
+
+          <div class="field-group">
+            <label for="user-name">User Name</label>
+            <input id="user-name" name="name" type="text" placeholder="Your name">
+          </div>
+
+          <div class="submit-row">
+            <input type="submit" value="Submit Review">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Efita E. Effiom
+        <span class="flag-inline">🇳🇬</span> Nigeria
+      </p>
+      <p id="lastModified">Last modified: </p>
+    </footer>
+  </body>
+</html>
