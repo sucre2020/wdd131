@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Submit information about an abandoned or stalled public project in Nigeria.">
+     <meta name="author" content="Efita E. Effiom">
+      <title>Naijastalled | Submit a case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Naijastalled home">
+          <a href="index.html">
+            <span class="brand-mark">N</span>
+          </a>
+          <div>
+            <strong>Naijastalled</strong>
+            <small>Tracking stalled public projects</small>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="submit.html" class="active">Submit a case</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Contribute</p>
+          <h1>Help document a stalled public project.</h1>
+          <p>
+            Whether you are a community member, journalist, researcher, or public servant,
+            your information can improve the public record on abandoned and unfinished projects.
+          </p>
+        </div>
+      </section>
+
+      <section class="section form-section">
+        <div class="container single-column">
+          <div class="submit-column">
+            <form class="case-form" id="case-form">
+              <div class="form-grid">
+                <div>
+                  <label for="project-name">Project name</label>
+                  <input id="project-name" name="project-name" type="text" placeholder="e.g. Rivers Monorail" required />
+                </div>
+
+                <div>
+                  <label for="state">State</label>
+                  <input id="state" name="state" type="text" placeholder="State" required />
+                </div>
+
+                <div>
+                  <label for="project-type">Project type</label>
+                  <select id="project-type" name="project-type" required>
+                    <option value="">Select type</option>
+                    <option>Transport</option>
+                    <option>Infrastructure</option>
+                    <option>Industrial</option>
+                    <option>Tourism</option>
+                    <option>Education</option>
+                    <option>Healthcare</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="status">Current status</label>
+                  <select id="status" name="status" required>
+                    <option value="">Select status</option>
+                    <option>Abandoned</option>
+                    <option>Incomplete</option>
+                    <option>Suspended</option>
+                    <option>Under review</option>
+                    <option>Partially active</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="year-started">Year started</label>
+                  <input id="year-started" name="year-started" type="number" min="1900" max="2100" placeholder="2000" />
+                </div>
+
+                <div>
+                  <label for="source">Source link</label>
+                  <input id="source" name="source" type="url" placeholder="https://example.com" />
+                </div>
+              </div>
+
+              <div>
+                <label for="summary">Project summary</label>
+                <textarea id="summary" name="summary" rows="6" placeholder="Describe the project, its original purpose, and why it is considered stalled or abandoned." required></textarea>
+              </div>
+
+              <div>
+                <label for="details">Additional details</label>
+                <textarea id="details" name="details" rows="5" placeholder="Add details such as local reports, contractor information, funding gaps, or community impact."></textarea>
+              </div>
+
+              <fieldset>
+                <legend>Submission information</legend>
+                <label class="checkbox-wrap">
+                  <input type="checkbox" name="verified" required />
+                  I confirm this information is based on public reporting or firsthand knowledge.
+                </label>
+                <label class="checkbox-wrap">
+                  <input type="checkbox" name="consent" required />
+                  I agree that my submission may be reviewed before publication.
+                </label>
+              </fieldset>
+
+              <button type="submit" class="button primary">Submit case</button>
+            </form>
+
+            <aside id="submission-result" class="submission-result" hidden aria-live="polite">
+              <h2>Submitted project details</h2>
+              <div class="result-card"></div>
+            </aside>
+          </div>
+
+          <aside class="submission-note">
+            <h2>How submissions are reviewed</h2>
+            <p>
+              Each case is reviewed for clarity, relevance, and supporting evidence. Naijastalled
+              aims to document real public-interest stories without spreading rumor or speculation.
+            </p>
+            <ul>
+              <li>We check for public sources or reliable reporting.</li>
+              <li>We verify state, project type, and date details.</li>
+              <li>We add context where details are incomplete.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Naijastalled | Efita Effiom</p>
+        <p>Tracking stalled public projects across Nigeria.</p>
+      </div>
+    </footer>
+
+    <script src="scripts/submit.js"></script>
+  </body>
+</html>

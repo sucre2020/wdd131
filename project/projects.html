@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Browse stalled and abandoned public projects across Nigeria on Naijastalled.">
+     <meta name="author" content="Efita E. Effiom">
+    <title>Naijastalled | Project Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Naijastalled home">
+        <a href="index.html">
+          <span class="brand-mark">N</span></a>
+          <div>
+            <strong>Naijastalled</strong>
+            <small>Tracking stalled public projects</small>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="submit.html">Submit a case</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Project directory</p>
+          <h1>Investigating stalled public projects across Nigeria.</h1>
+          <p>
+            The archive highlights infrastructure and development sites that remain incomplete,
+            neglected, or lacking a clear public explanation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow">Map of hotspots</p>
+              <h2>Nigeria project hotspots</h2>
+            </div>
+          </div>
+
+          <div class="map-panel" aria-label="Nigeria project map overview">
+            <svg viewBox="0 0 700 560" role="img" aria-labelledby="mapTitle mapDesc">
+              <title id="mapTitle">Nigeria project map</title>
+              <desc id="mapDesc">A simplified map showing areas with stalled public projects across Nigeria.</desc>
+              <path class="map-shape" d="M181 94l83-49 118 11 52 51 19 55-26 75 24 64-28 69-82 62-94 34-104-18-86-67-32-92 14-76 44-72 39-48z"/>
+              <g class="map-point" data-label="Lagos">
+                <circle cx="272" cy="305" r="8"/>
+                <text x="286" y="310">Lagos</text>
+              </g>
+              <g class="map-point" data-label="Abuja">
+                <circle cx="337" cy="254" r="8"/>
+                <text x="351" y="259">Abuja</text>
+              </g>
+              <g class="map-point" data-label="Kogi">
+                <circle cx="410" cy="247" r="8"/>
+                <text x="424" y="252">Kogi</text>
+              </g>
+              <g class="map-point" data-label="Rivers">
+                <circle cx="424" cy="341" r="8"/>
+                <text x="438" y="346">Rivers</text>
+              </g>
+              <g class="map-point" data-label="Plateau">
+                <circle cx="365" cy="200" r="8"/>
+                <text x="379" y="205">Plateau</text>
+              </g>
+              <g class="map-point" data-label="Cross River">
+                <circle cx="429" cy="283" r="8"/>
+                <text x="443" y="288">Cross River</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="filter-row" aria-label="Project filters">
+            <span class="filter-label">Filter</span>
+            <ul class="filter-list">
+              <li><a href="#" class="active" data-filter="all">All</a></li>
+              <li><a href="#" data-filter="infrastructure">Infrastructure</a></li>
+              <li><a href="#" data-filter="industrial">Industrial</a></li>
+              <li><a href="#" data-filter="transport">Transport</a></li>
+              <li><a href="#" data-filter="tourism">Tourism</a></li>
+              <li><a href="#" data-filter="sports">Sports</a></li>
+            </ul>
+          </div>
+
+          <div class="project-grid directory-grid">
+            <article class="project-card feature-card" data-category="tourism">
+              <img src="images/tinapa_abandoned.webp" alt="Tinapa Resort abandoned in Cross River state" />
+              <div class="card-body">
+                <p class="meta">Cross River State • Tourism</p>
+                <h3>Tinapa Resort and Business City</h3>
+                <p>
+                  Originally pitched as a tourism, leisure, and business destination, the site remains a major example of stalled public-private planning.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Abandoned / partially active</li>
+                  <li>Purpose: Tourism and commercial development</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card feature-card" data-category="industrial">
+              <img src="images/ajaokuta-steel-company_abandoned.jpeg" alt="Ajaokuta Steel Company industrial site" />
+              <div class="card-body">
+                <p class="meta">Kogi State • Industrial</p>
+                <h3>Ajaokuta Steel Company</h3>
+                <p>
+                  One of Nigeria’s most discussed industrial projects, it has experienced repeated delays and incomplete implementation over many years.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Unfinished</li>
+                  <li>Purpose: Steel production and industrial development</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card feature-card" data-category="infrastructure">
+              <img src="images/federal-secretariat-ikoyi_abandoned.webp" alt="Federal Secretariat in Ikoyi, Lagos" />
+              <div class="card-body">
+                <p class="meta">Lagos State • Public office</p>
+                <h3>Federal Secretariat, Ikoyi</h3>
+                <p>
+                  A visible public office project with unfinished sections and limited regular use, raising concerns about planning and execution.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Under review</li>
+                  <li>Purpose: Government administrative complex</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card feature-card" data-category="tourism">
+              <img src="images/roc-international-hotel_abandoned.webp" alt="Roc International Hotel in Nigeria" />
+              <div class="card-body">
+                <p class="meta">Plateau State • Hospitality</p>
+                <h3>Roc International Hotel</h3>
+                <p>
+                  The site is often cited in discussions about abandoned hospitality projects and unrealistic timelines in public development planning.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Dormant</li>
+                  <li>Purpose: Hotel and conference facility</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card feature-card" data-category="sports">
+              <img src="images/plateau-olympic-stadium_abandoned.webp" alt="Plateau Olympic Stadium abandoned site" />
+              <div class="card-body">
+                <p class="meta">Plateau State • Sports</p>
+                <h3>Plateau Olympic Stadium</h3>
+                <p>
+                  Conceived as a sports and event complex, the stadium remains incomplete and disconnected from regular public use.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Incomplete</li>
+                  <li>Purpose: Sports and event venue</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card feature-card" data-category="transport">
+              <img src="images/rivers-monorail_abandoned.webp" alt="Rivers state monorail project" />
+              <div class="card-body">
+                <p class="meta">Rivers State • Transport</p>
+                <h3>Rivers Monorail Project</h3>
+                <p>
+                  A proposed urban transport initiative that highlights the recurring challenge of stalled mass transit concepts without clear completion plans.
+                </p>
+                <ul class="card-points">
+                  <li>Status: Suspended</li>
+                  <li>Purpose: Urban rail transport</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <p class="filter-empty" hidden>No projects match that category yet.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container insights-layout">
+          <div>
+            <p class="eyebrow">Patterns to watch</p>
+            <h2>Common reasons projects stall</h2>
+          </div>
+
+          <div class="insight-list">
+            <article>
+              <h3>Funding gaps</h3>
+              <p>Projects often stop when capital releases are delayed, diverted, or inconsistent.</p>
+            </article>
+            <article>
+              <h3>Weak project management</h3>
+              <p>Without a strong update cycle, technical and administrative bottlenecks can compound.</p>
+            </article>
+            <article>
+              <h3>Limited public oversight</h3>
+              <p>Opaque decisions make it harder for communities to track costs, milestones, and progress.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Naijastalled | Efita Effiom</p>
+        <p>Tracking stalled public projects across Nigeria.</p>
+      </div>
+    </footer>
+
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>
